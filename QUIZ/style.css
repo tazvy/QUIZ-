@@ -1,0 +1,70 @@
+/* style.css */
+body {
+    background-color: rgb(32, 7, 119); /* Purple background */
+    color: #fff; /* White text */
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    margin-bottom: 20px;
+}
+.quiz-container {
+    background: url('quiz.jpg') no-repeat; /* Background image */
+    background-size: 100% 100%; /* Cover the entire container */
+    color: #000; /* Black text for quiz content */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    min-height: 500px; /* Minimum height to display image properly */
+    position: relative;
+}
+.quiz-content {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for content */
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 20px;
+}
+.question-container {
+    margin-bottom: 15px;
+}
+.options-container .btn {
+    margin: 5px 0;
+    width: 100%;
+}
+.timer-and-score {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.about-link {
+    margin-top: 20px;
+}
+.option-item {
+    margin-bottom: 10px; /* Adjust spacing between options */
+}
+
+.option-item label {
+    margin-left: 5px; /* Optional: Adjust label spacing */
+}
+
+.percentage {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.pass {
+    color: green;
+}
+
+.fail {
+    color: red;
+}
+
+
+
+
+

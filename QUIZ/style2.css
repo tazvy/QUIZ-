@@ -1,0 +1,51 @@
+
+.about-container {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-container h1 {
+    font-size: 36px;
+    margin: 0 0 20px;
+}
+
+.about-content {
+    text-align: left;
+    padding: 20px;
+}
+
+.about-content p, .about-content ul, .about-content ol {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.about-content ul, .about-content ol {
+    margin-left: 20px;
+}
+
+.enjoy-message {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.back-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.back-link:hover {
+    background-color: #003e7a;
+}

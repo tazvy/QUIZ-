@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Game</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Quiz Game</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" >Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" >About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.jetpunk.com">Learn More</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="quiz-container">
+            <div class="quiz-content">
+                <h1 class="text-center text-primary">Quiz Game</h1>
+                <div class="form-group">
+                    <label for="topic">Select Topic:</label>
+                    <select id="topic" class="form-control">
+                        <option value="">Select a Topic</option>
+                        <option value="topic1">General Knowledge</option>
+                        <option value="topic2">World Politics</option>
+                        <option value="topic3">IT History</option>
+                        <option value="topic4">Fun Facts</option>
+                        <option value="topic5">Greek Mythology</option>
+                    </select>
+                </div>
+                <div class="question-container">
+                    <p id="question"></p>
+                </div>
+                <div class="options-container" id="options">
+                    <!-- Options will be populated here dynamically via JavaScript -->
+                </div>
+                <div class="text-center mt-3">
+                    <button id="next-button" class="btn btn-secondary" style="display: none;">Next</button>
+                </div>
+                <div class="timer-and-score mt-3">
+                    <p id="timer" class="timer">Time remaining: 07:00</p>
+                    <p id="score" class="score">Score: <span id="score-value">0</span></p>
+                </div>
+                <div class="text-center about-link mt-3">
+                    <a href="about.html" class="btn btn-info" >About Quiz Game</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Modal -->
+    <div class="modal fade" id="homeModal" tabindex="-1" aria-labelledby="homeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="homeModalLabel">Home</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Welcome to the Quiz Game! Select a topic to start the quiz.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Modal -->
+    <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="aboutModalLabel">About Quiz Game</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    This quiz game allows you to test your knowledge on various topics. Answer the questions and see if you can score high enough to pass!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="logic.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
